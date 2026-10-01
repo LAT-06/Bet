@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đức Vũ có đi field trip ở Nab không? | KèoMarket</title>
+<meta property="og:title" content="Đức Vũ có đi field trip ở Nab không?">
+<meta property="og:description" content="Cược điểm ảo: Có hay Không? Vào xem tỉ lệ.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231452f0'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='18' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #ffffff; --card: #ffffff; --soft: #f4f6f8; --line: #e6e8eb; --grid: #edf0f2;
+  --text: #1d2b39; --text-2: #5e6c7a;
+  --blue: #1452f0; --yes: #15803d; --no: #c81e1e;
+  --blue-fill: #1452f0; --yes-fill: #15803d; --no-fill: #dc2626;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #15202b; --card: #1c2a38; --soft: #243443; --line: #2d3d4d; --grid: #253545;
+    --text: #eef2f6; --text-2: #9eadbb;
+    --blue: #5b8dff; --yes: #4ade80; --no: #f87171;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+header { position: sticky; top: 0; z-index: 10; background: var(--card); border-bottom: 1px solid var(--line); }
+header .wrap { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -.01em; color: inherit; text-decoration: none; }
+.logo i { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: var(--blue-fill); color: #fff; font-style: normal; font-size: 16px; }
+#me { display: flex; align-items: center; gap: 20px; }
+.stat { text-align: right; line-height: 1.25; }
+.stat small { display: block; color: var(--text-2); font-size: 12px; }
+.stat b { font-weight: 600; }
+
+.page { display: grid; grid-template-columns: minmax(0, 1fr) 340px; grid-template-rows: auto 1fr; grid-template-areas: "top side" "bottom side"; column-gap: 40px; padding-top: 28px; padding-bottom: 64px; }
+.top { grid-area: top; }
+.bottom { grid-area: bottom; }
+aside { grid-area: side; align-self: start; position: sticky; top: 88px; display: grid; gap: 16px; }
+
+.title { display: flex; align-items: center; gap: 16px; }
+.thumb { width: 64px; height: 64px; flex: none; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; font-size: 22px; font-weight: 700; }
+h1 { margin: 0; font-size: 26px; line-height: 1.2; letter-spacing: -.02em; }
+.sub { margin-top: 6px; color: var(--text-2); font-size: 14px; }
+.banner { margin-top: 20px; padding: 12px 16px; border-radius: 10px; background: var(--soft); }
+.chance { margin-top: 24px; display: flex; align-items: baseline; gap: 10px; }
+.chance b { font-size: 48px; line-height: 1; letter-spacing: -.02em; }
+.chance span { color: var(--text-2); font-size: 18px; }
+
+.chart { position: relative; margin-top: 12px; }
+#chart { display: block; width: 100%; height: 240px; touch-action: pan-y; outline: none; }
+#chart:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; border-radius: 4px; }
+.gl { stroke: var(--grid); stroke-width: 1; shape-rendering: crispEdges; }
+.ax { fill: var(--text-2); font-size: 12px; font-variant-numeric: tabular-nums; }
+.ln { fill: none; stroke: var(--blue); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.dot { fill: var(--blue); stroke: var(--bg); stroke-width: 2; }
+.cross { stroke: var(--text-2); stroke-width: 1; shape-rendering: crispEdges; }
+.tip { position: absolute; top: -8px; pointer-events: none; padding: 6px 10px; border-radius: 8px; background: var(--card); border: 1px solid var(--line); box-shadow: 0 6px 16px rgb(0 0 0 / .12); font-size: 13px; white-space: nowrap; }
+.tip b { display: block; font-size: 15px; }
+.tip span { color: var(--text-2); }
+
+h2 { margin: 36px 0 12px; font-size: 18px; letter-spacing: -.01em; }
+.rules { margin: 0; color: var(--text-2); }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+h3 { margin: 0; padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+ol, ul { list-style: none; margin: 0; padding: 0; }
+li { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.av { width: 28px; height: 28px; flex: none; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 12px; font-weight: 700; }
+.who { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.num { font-variant-numeric: tabular-nums; font-weight: 500; }
+.mine .who::after { content: " (bạn)"; color: var(--text-2); font-weight: 400; }
+.empty { color: var(--text-2); }
+#feed { max-height: 520px; overflow-y: auto; }
+#feed .txt { flex: 1; min-width: 0; }
+#feed .meta { color: var(--text-2); font-size: 13px; white-space: nowrap; }
+.yes { color: var(--yes); }
+.no { color: var(--no); }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; box-shadow: 0 1px 2px rgb(0 0 0 / .04), 0 4px 16px rgb(0 0 0 / .04); }
+.tab { margin-bottom: 16px; border-bottom: 1px solid var(--line); font-weight: 600; }
+.tab span { display: inline-block; padding-bottom: 10px; margin-bottom: -1px; border-bottom: 2px solid var(--text); }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.outs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
+.out { border: 0; border-radius: 8px; padding: 13px 8px; background: var(--soft); color: var(--text-2); font-size: 16px; font-weight: 600; transition: background .15s, color .15s; }
+.out:not(.on):hover { color: var(--text); }
+.out.yes.on { background: var(--yes-fill); color: #fff; }
+.out.no.on { background: var(--no-fill); color: #fff; }
+label.f { display: block; font-size: 13px; color: var(--text-2); }
+label.f input { display: block; width: 100%; margin-top: 6px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); font-size: 15px; }
+.amt { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; }
+.amt label { font-weight: 600; }
+.amt input { width: 0; flex: 1; padding: 0; border: 0; background: none; text-align: right; font-size: 32px; font-weight: 600; }
+.amt input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 4px; }
+.amt input::placeholder { color: var(--text-2); opacity: .6; }
+input[type=number] { appearance: textfield; -moz-appearance: textfield; }
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.chips { display: flex; justify-content: flex-end; gap: 6px; margin-top: 8px; }
+.chips button { padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; background: none; font-size: 13px; font-weight: 500; }
+.chips button:hover { background: var(--soft); }
+.win { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-top: 18px; }
+.win small { color: var(--text-2); }
+.win b { color: var(--yes); font-size: 22px; }
+.go { width: 100%; margin-top: 16px; padding: 13px; border: 0; border-radius: 8px; background: var(--blue-fill); color: #fff; font-size: 16px; font-weight: 600; }
+.go:hover { filter: brightness(1.08); }
+fieldset:disabled .out, fieldset:disabled .go, fieldset:disabled .chips button { opacity: .5; cursor: not-allowed; }
+.msg { min-height: 20px; margin: 10px 0 0; font-size: 14px; text-align: center; }
+.msg.ok { color: var(--yes); }
+.msg.err { color: var(--no); }
+.fine { margin: 6px 0 0; color: var(--text-2); font-size: 12px; text-align: center; }
+
+@media (max-width: 880px) {
+  .page { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: "top" "side" "bottom"; padding-top: 20px; }
+  aside { position: static; margin-top: 20px; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 21px; }
+  .thumb { width: 52px; height: 52px; font-size: 18px; }
+  #me { gap: 12px; }
+  .logo span { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/"><i>K</i><span>KèoMarket</span></a>
+    <div id="me"></div>
+  </div>
+</header>
+
+<main class="wrap page">
+  <section class="top">
+    <div class="title">
+      <div class="thumb">ĐV</div>
+      <div>
+        <h1>Đức Vũ có đi field trip ở Nab không?</h1>
+        <div class="sub" id="sub">&nbsp;</div>
+      </div>
+    </div>
+    <div id="banner" class="banner" hidden></div>
+    <div class="chance"><b id="pct">50%</b><span>khả năng Có</span></div>
+    <div class="chart">
+      <svg id="chart" role="img" tabindex="0" aria-label="Biểu đồ khả năng Có theo thời gian"></svg>
+      <div id="tip" class="tip" hidden></div>
+    </div>
+  </section>
+
+  <aside>
+    <form id="bet" class="card">
+      <div class="tab"><span>Cược</span></div>
+      <label class="f">Tên của bạn
+        <input id="name" required maxlength="20" pattern="[\p{L}\p{M}\p{N}_]{2,20}" title="2–20 ký tự: chữ, số, _" autocomplete="nickname" placeholder="vd: Minh_Anh">
+      </label>
+      <fieldset id="fs">
+        <div class="outs">
+          <button type="button" class="out yes on" data-side="yes" aria-pressed="true">Có <span id="py">50¢</span></button>
+          <button type="button" class="out no" data-side="no" aria-pressed="false">Không <span id="pn">50¢</span></button>
+        </div>
+        <div class="amt"><label for="amt">Số điểm</label><input id="amt" type="number" min="1" step="1" inputmode="numeric" placeholder="0" required></div>
+        <div class="chips"><button type="button" data-add="10">+10</button><button type="button" data-add="100">+100</button><button type="button" data-add="max">Max</button></div>
+        <div class="win"><span>Nếu thắng nhận <small>(tạm tính)</small></span><b id="win">0 điểm</b></div>
+        <button class="go" id="go">Cược Có</button>
+      </fieldset>
+      <p id="msg" class="msg" role="status"></p>
+      <p class="fine">Điểm ảo, không phải tiền thật. Mỗi tên có 1.000 điểm.</p>
+    </form>
+
+    <form id="admin" class="card" hidden>
+      <div class="tab"><span>Admin: chốt kèo</span></div>
+      <label class="f">Admin key <input id="key" type="password" required autocomplete="off"></label>
+      <div class="outs">
+        <button class="out yes on" value="yes">Chốt Có</button>
+        <button class="out no on" value="no">Chốt Không</button>
+      </div>
+      <p id="amsg" class="msg" role="status"></p>
+    </form>
+  </aside>
+
+  <section class="bottom">
+    <h2>Luật</h2>
+    <p class="rules">Chốt <b class="yes">Có</b> nếu Đức Vũ có mặt trong chuyến field trip ở Nab, ngược lại chốt <b class="no">Không</b>. Tỉ lệ = điểm cược vào Có / tổng điểm. Khi chốt, bên thắng chia toàn bộ điểm theo tỉ lệ mỗi người đã cược.</p>
+    <h2>Người cược</h2>
+    <div class="cols">
+      <div><h3 class="yes">Có</h3><ol id="h-yes"></ol></div>
+      <div><h3 class="no">Không</h3><ol id="h-no"></ol></div>
+    </div>
+    <h2>Hoạt động</h2>
+    <ul id="feed"></ul>
+  </section>
+</main>
+
+<script type="module">
+import { derive, payout, toWin } from './market.js';
+
+const $ = id => document.getElementById(id);
+const h = (tag, props, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
+const fmt = n => Math.round(n).toLocaleString('vi-VN');
+const pct = p => Math.round(p * 100) + '%';
+const when = t => new Date(t).toLocaleString('vi-VN', { hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'numeric' });
+const rtf = new Intl.RelativeTimeFormat('vi', { numeric: 'auto' });
+const ago = t => {
+  const s = (Date.now() - t) / 1000;
+  for (const [unit, n] of [['day', 86400], ['hour', 3600], ['minute', 60]]) if (s >= n) return rtf.format(-Math.floor(s / n), unit).toLowerCase();
+  return 'vừa xong';
+};
+const say = (id, text, cls = '') => Object.assign($(id), { textContent: text, className: `msg ${cls}` });
+const SIDE = { yes: 'Có', no: 'Không' };
+const NAME = /^[\p{L}\p{M}\p{N}_]{2,20}$/u;
+const outs = [...document.querySelectorAll('#bet .out')];
+const myName = () => $('name').value.normalize('NFC').trim();
+
+let S, D, side = 'yes', pts = [], X, Y, hover = null;
+
+async function api(body) {
+  const r = await fetch('/api', body && { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || `Lỗi server (${r.status})`);
+  return j;
+}
+
+function avatar(name) {
+  let hue = 0;
+  for (const c of name) hue = (hue * 31 + c.codePointAt(0)) % 360;
+  return h('span', { className: 'av', style: `background:linear-gradient(135deg,hsl(${hue} 65% 55%),hsl(${hue + 50} 65% 40%))` }, name[0].toUpperCase());
+}
+
+function render() {
+  D = derive(S.trades);
+  const { pool, users, total, p } = D, res = S.res, name = myName();
+  const me = users[name] ?? { yes: 0, no: 0 }, bal = S.start - me.yes - me.no;
+  const stat = (label, v) => h('div', { className: 'stat' }, h('small', {}, label), h('b', {}, v));
+
+  $('me').replaceChildren(...NAME.test(name) ? [
+    ...res ? [] : [stat('Đang cược', fmt(me.yes + me.no))],
+    stat('Số dư', fmt(bal + (res ? payout(D, res, me) : 0))),
+    avatar(name),
+  ] : []);
+  $('sub').textContent = `${fmt(total)} điểm Vol. · ${Object.keys(users).length} người cược`;
+  $('pct').textContent = pct(p);
+  $('py').textContent = Math.round(p * 100) + '¢';
+  $('pn').textContent = 100 - Math.round(p * 100) + '¢';
+  $('banner').hidden = !res;
+  if (res) $('banner').replaceChildren(h('b', { className: res }, `Đã chốt: ${SIDE[res]}`),
+    pool[res] ? ` · Bên ${SIDE[res]} chia ${fmt(total)} điểm` : ' · Không ai cược bên thắng, hoàn điểm cho tất cả');
+  $('fs').disabled = !!res;
+
+  for (const s of ['yes', 'no']) {
+    const list = Object.values(users).filter(u => u[s]).sort((a, b) => b[s] - a[s]);
+    $(`h-${s}`).replaceChildren(...list.map(u => h('li', { className: u.name === name ? 'mine' : '' },
+      avatar(u.name), h('span', { className: 'who' }, u.name),
+      h('span', { className: 'num' }, fmt(u[s]) + (res === s ? ` → ${fmt(payout(D, res, u))}` : '')))));
+    if (!list.length) $(`h-${s}`).replaceChildren(h('li', { className: 'empty' }, 'Chưa ai cược'));
+  }
+
+  $('feed').replaceChildren(...S.trades.map(([t, s, amt, who], i) => h('li', {},
+    avatar(who),
+    h('span', { className: 'txt' }, h('b', {}, who), ` cược ${fmt(amt)} vào `, h('b', { className: s }, SIDE[s])),
+    h('span', { className: 'meta' }, `Có ${pct(D.hist[i][1])} · ${ago(t)}`))).reverse());
+  if (!S.trades.length) $('feed').replaceChildren(h('li', { className: 'empty' }, 'Chưa ai cược. Mở hàng đi!'));
+
+  drawChart();
+  quote();
+}
+
+function drawChart() {
+  const svg = $('chart'), W = svg.parentNode.clientWidth, H = 240, now = Date.now(), right = W - 48;
+  pts = D.hist.length ? [[D.hist[0][0], 0.5], ...D.hist, [now, D.p]] : [[now - 864e5, 0.5], [now, 0.5]];
+  const t0 = pts[0][0];
+  X = t => 8 + (t - t0) / (now - t0 || 1) * (right - 8);
+  Y = p => 12 + (1 - p) * (H - 44);
+  const d = pts.map(([t, p], i) => i ? `H${X(t)}V${Y(p)}` : `M${X(t)},${Y(p)}`).join('');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('aria-label', `Biểu đồ khả năng Có theo thời gian, hiện tại ${pct(D.p)}`);
+  svg.innerHTML = [0, 0.25, 0.5, 0.75, 1].map(g => `<line class="gl" x1="8" x2="${right}" y1="${Y(g)}" y2="${Y(g)}"/>`
+      + `<text class="ax" x="${right + 8}" y="${Y(g) + 4}">${g * 100}%</text>`).join('')
+    + `<text class="ax" x="8" y="${H - 8}">${when(t0)}</text>`
+    + `<text class="ax" x="${right}" y="${H - 8}" text-anchor="end">${when(now)}</text>`
+    + `<path class="ln" d="${d}"/><circle class="dot" cx="${X(now)}" cy="${Y(D.p)}" r="4"/>`
+    + `<line id="cross" class="cross" y1="12" y2="${H - 32}" visibility="hidden"/>`
+    + `<circle id="hdot" class="dot" r="4" visibility="hidden"/>`;
+  if (hover != null) tip(Math.min(hover, pts.length - 1));
+}
+
+// Crosshair + tooltip: chuột/ngón tay bắt điểm gần nhất, bàn phím dùng ← →
+function tip(i) {
+  hover = i;
+  const box = $('tip'), cross = $('cross'), dot = $('hdot');
+  if (i == null) { box.hidden = true; cross.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); return; }
+  const [t, p] = pts[i], x = X(t), tr = S.trades[i - 1];
+  for (const [a, v] of [['x1', x], ['x2', x], ['visibility', 'visible']]) cross.setAttribute(a, v);
+  for (const [a, v] of [['cx', x], ['cy', Y(p)], ['visibility', 'visible']]) dot.setAttribute(a, v);
+  box.replaceChildren(h('b', {}, `Có ${pct(p)}`), h('span', {}, (tr ? `${tr[3]} cược ${fmt(tr[2])} ${SIDE[tr[1]]} · ` : '') + when(t)));
+  box.hidden = false;
+  box.style.left = Math.max(0, Math.min(x - box.offsetWidth / 2, $('chart').parentNode.clientWidth - box.offsetWidth)) + 'px';
+}
+$('chart').onpointermove = e => {
+  if (!D) return;
+  const x = e.clientX - $('chart').getBoundingClientRect().left;
+  let best = 0;
+  pts.forEach(([t], j) => { if (Math.abs(X(t) - x) < Math.abs(X(pts[best][0]) - x)) best = j; });
+  tip(best);
+};
+$('chart').onpointerleave = $('chart').onblur = () => tip(null);
+$('chart').onfocus = () => D && tip(pts.length - 1);
+$('chart').onkeydown = e => {
+  const step = { ArrowLeft: -1, ArrowRight: 1 }[e.key];
+  if (step && hover != null) { e.preventDefault(); tip(Math.max(0, Math.min(pts.length - 1, hover + step))); }
+};
+
+function quote() {
+  if (D) $('win').textContent = fmt(toWin(D, side, Math.max(0, Math.floor(+$('amt').value) || 0))) + ' điểm';
+}
+
+function pick(s) {
+  side = s;
+  for (const b of outs) { b.classList.toggle('on', b.dataset.side === s); b.setAttribute('aria-pressed', b.dataset.side === s); }
+  $('go').textContent = `Cược ${SIDE[s]}`;
+  quote();
+}
+for (const b of outs) b.onclick = () => pick(b.dataset.side);
+
+for (const b of document.querySelectorAll('[data-add]')) b.onclick = () => {
+  if (!S) return;
+  const me = D.users[myName()] ?? { yes: 0, no: 0 }, bal = S.start - me.yes - me.no;
+  $('amt').value = b.dataset.add === 'max' ? bal : Math.min(bal, (Math.floor(+$('amt').value) || 0) + +b.dataset.add);
+  quote();
+};
+
+try { $('name').value = localStorage.getItem('name') ?? ''; } catch {}
+$('name').oninput = () => { try { localStorage.setItem('name', myName()); } catch {} if (S) render(); };
+$('amt').oninput = quote;
+
+$('bet').onsubmit = async e => {
+  e.preventDefault();
+  const amount = Math.floor(+$('amt').value);
+  $('fs').disabled = true;
+  try {
+    S = await api({ name: myName(), side, amount });
+    $('amt').value = '';
+    say('msg', `Đã cược ${fmt(amount)} điểm vào ${SIDE[side]}`, 'ok');
+  } catch (err) {
+    say('msg', err.message, 'err');
+  } finally {
+    $('fs').disabled = false;
+    if (S) render();
+  }
+};
+
+if (new URLSearchParams(location.search).has('admin')) {
+  $('admin').hidden = false;
+  $('admin').onsubmit = async e => {
+    e.preventDefault();
+    const s = e.submitter.value;
+    if (!confirm(`Chốt kèo: ${SIDE[s]}?`)) return;
+    try {
+      S = await api({ action: 'resolve', key: $('key').value, side: s });
+      render();
+      say('amsg', `Đã chốt: ${SIDE[s]}`, 'ok');
+    } catch (err) {
+      say('amsg', err.message, 'err');
+    }
+  };
+}
+
+async function load() {
+  try { S = await api(); render(); } catch (err) { say('msg', err.message, 'err'); }
+}
+load();
+setInterval(() => document.hidden || load(), 20000);
+document.addEventListener('visibilitychange', () => document.hidden || load());
+addEventListener('resize', () => D && drawChart());
+</script>
+</body>
+</html>
